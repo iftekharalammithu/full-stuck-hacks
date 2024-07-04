@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  border: 1px solid rgba(121, 231, 106, 0.541);
+  gap: 40px;
+  align-items: center;
+  height: 50px;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 20px; /* set font size to 20px */
+  color: #ffffff; /* set default color */
+  margin-right: 20px;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  color: #b3eb5b; /* change color on hover */
+  border: 1px solid rgba(121, 231, 106, 0.541);
+  border-radius: 10px;
+}

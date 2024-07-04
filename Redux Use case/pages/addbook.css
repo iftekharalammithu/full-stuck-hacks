@@ -1,0 +1,43 @@
+.addbook {
+  height: 100vh;
+  justify-content: center;
+  /* align-items: center; */
+
+  display: flex;
+  border: 1px solid red;
+}
+
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container input {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 40vh;
+}
+button {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  /* border: 1px solid red; */
+  width: 100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+}

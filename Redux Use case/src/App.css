@@ -3,7 +3,28 @@
   /* border: 1px solid red; */
   width: 100%;
   height: 100vh;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  /* justify-content: center; */
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 50px;
+  font-size: 20px;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid #3f413c;
+
+  width: 100%;
+  margin: 20px;
+  color: rgb(214, 214, 214);
+}
+th {
+  border: 1px solid #ccc;
+  /* color: #333; */
+  font-weight: bold;
+  padding: 10px;
 }

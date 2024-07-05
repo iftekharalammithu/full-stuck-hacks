@@ -5,7 +5,6 @@ import { deletebook } from "../Redux/BookSlice";
 
 const Booklist = () => {
   const books = useSelector((state) => state.bookreduser.book);
-  const navigate = useNavigate();
   // console.log(books);
   const dispatch = useDispatch();
   const handledelete = (id) => {

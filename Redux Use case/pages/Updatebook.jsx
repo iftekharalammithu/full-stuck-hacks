@@ -79,7 +79,7 @@ const Updatebook = () => {
           }}
           type="submit"
         >
-          Add Book
+          Update
         </button>
       </form>
     </div>

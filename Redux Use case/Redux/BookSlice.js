@@ -8,7 +8,7 @@ const inisialbook = {
 };
 
 export const bookslice = createSlice({
-  name: "book",
+  name: "bookslicename",
   initialState: inisialbook,
   reducers: {
     showbook: (state) => {

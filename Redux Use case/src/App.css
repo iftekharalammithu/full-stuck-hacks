@@ -28,3 +28,10 @@ th {
   font-weight: bold;
   padding: 10px;
 }
+a {
+  color: rgb(165, 165, 165);
+  text-decoration: none;
+}
+a:hover {
+  color: #b3eb5b;
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Booklist = () => {
   return (
@@ -10,6 +11,7 @@ const Booklist = () => {
               <th>ID</th>
               <th>Book Name</th>
               <th>Author</th>
+              <th>Edit/Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -17,6 +19,9 @@ const Booklist = () => {
               <th>1</th>
               <th>The Earth</th>
               <th>Nil Amstrong</th>
+              <th>
+                <Link to="/updatebook">Edit</Link> / <button>Delete</button>
+              </th>
             </tr>
           </tbody>
         </table>

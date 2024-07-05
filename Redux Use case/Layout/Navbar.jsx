@@ -8,7 +8,6 @@ const Navbar = () => {
       <nav className="navbar">
         <Link to="/">Home</Link>
         <Link to="/addbook">Add Book</Link>
-        <Link to="/updatebook">Update Book</Link>
       </nav>
     </div>
   );

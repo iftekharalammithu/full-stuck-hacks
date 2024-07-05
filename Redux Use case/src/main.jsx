@@ -6,9 +6,11 @@ import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Addbook from "../pages/Addbook.jsx";
 import Updatebook from "../pages/Updatebook.jsx";
 import Navbar from "../Layout/Navbar.jsx";
+import { Provider } from "react-redux";
+import store from "../Redux/store.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <Provider store={store}>
     <BrowserRouter>
       <Navbar></Navbar>
       <Routes>
@@ -17,5 +19,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/updatebook" element={<Updatebook />}></Route>
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  </Provider>
 );

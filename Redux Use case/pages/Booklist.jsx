@@ -1,7 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { deletebook } from "../Redux/BookSlice";
 
 const Booklist = () => {
+  const books = useSelector((state) => state.bookreduser.book);
+  const navigate = useNavigate();
+  // console.log(books);
+  const dispatch = useDispatch();
+  const handledelete = (id) => {
+    // console.log(id);
+    dispatch(deletebook(id));
+  };
+
   return (
     <div>
       <div className="container">
@@ -15,14 +26,23 @@ const Booklist = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th>1</th>
-              <th>The Earth</th>
-              <th>Nil Amstrong</th>
-              <th>
-                <Link to="/updatebook">Edit</Link> / <button>Delete</button>
-              </th>
-            </tr>
+            {books &&
+              books.map((book) => {
+                const { id, title, author } = book;
+                return (
+                  <tr key={id}>
+                    <td>{id}</td>
+                    <td>{title}</td>
+                    <td>{author}</td>
+                    <td>
+                      <Link to="/updatebook" state={{ id, title, author }}>
+                        <button>Edit</button>/
+                      </Link>
+                      <button onClick={() => handledelete(id)}>Delete</button>
+                    </td>
+                  </tr>
+                );
+              })}
           </tbody>
         </table>
       </div>

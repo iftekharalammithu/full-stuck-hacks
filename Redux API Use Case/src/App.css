@@ -4,3 +4,48 @@
   padding: 2rem;
   text-align: center;
 }
+
+.postdata {
+  display: flex;
+  margin-top: 2rem;
+  padding: 0 5rem;
+}
+
+table {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+td {
+  text-align: center;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 10%; /* Width for the first column */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 50%; /* Width for the second column */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 10%; /* Width for the third column */
+}
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+button:hover {
+  color: tomato;
+}

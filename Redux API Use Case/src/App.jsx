@@ -26,7 +26,7 @@ function App() {
     <>
       <div className="postdata">
         {status === "loading" && <h1> Loading...</h1>}
-        {status === "failed" && <h1> Server Not Responding!</h1>}
+        {status === "failed" && <h1> {error}</h1>}
         {status === "idle" && (
           <table>
             <thead>

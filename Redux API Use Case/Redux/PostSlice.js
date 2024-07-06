@@ -8,6 +8,7 @@ const initialState = {
 };
 
 // in this post and fatchposts mean the name of postslice in post and the fatchposts is the api call fanction
+// This fatch will called from the home page useing useEffect
 export const fatchposts = createAsyncThunk("post/fatchposts", async () => {
   const response = await axios.get(
     "https://jsonplaceholder.typicode.com/posts"

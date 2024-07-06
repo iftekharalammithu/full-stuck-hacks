@@ -2,9 +2,9 @@ import axios from "axios";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  posts: [],
-  status: "idl",
-  error: null,
+  posts: [], // Initial empty array to store fetched posts
+  status: "idl", // Initial status set to 'idl' (idle)
+  error: null, // Initially, there is no error
 };
 
 // in this post and fatchposts mean the name of postslice in post and the fatchposts is the api call fanction
@@ -26,7 +26,6 @@ export const postslice = createSlice({
       state.posts = deletepost;
     },
     update_post: (state, action) => {
-      console.log(action.payload);
       const { id, post_title, post_body } = action.payload;
       state.posts.map((post) => {
         if (post.id === id) {

@@ -6,4 +6,5 @@ const Use_Count_Number = create((set) => ({
   Count: 0,
   setCount: (payload) => set({ Count: payload }),
 }));
+
 export default Use_Count_Number;

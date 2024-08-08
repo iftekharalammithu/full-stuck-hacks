@@ -4,10 +4,10 @@
 npm i apollo-server-core @apollo/server graphql
 ```
 
-=> type Query Is The Schema of Graphql
-=> resolvers is for all functions activity
-=> ApolloServerPluginLandingPageGraphQLPlayground is for graphql dashboard
-=> Mutation is for Data Update , Delete
+=> type Query Is The Schema of Graphql <br>
+=> resolvers is for all functions activity <br>
+=> ApolloServerPluginLandingPageGraphQLPlayground is for graphql dashboard <br>
+=> Mutation is for Data Update , Delete <br>
 
 # Api calls
 

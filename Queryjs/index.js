@@ -12,6 +12,7 @@ const typeDefs = gql`
     hello: String
     Post_d: [User]
     Comment_d: [comment]
+    individual(id: ID!): User
   }
 
   type User {
@@ -36,10 +37,12 @@ const resolvers = {
     hello: () => "Hello world",
     Post_d: () => post_data,
     Comment_d: () => Comment_data,
+    individual: (parent, arg) =>
+      post_data.find((user_d) => user_d.id == arg.id),
   },
 
   User: {
-    Comment_d: () => Comment_data,
+    Comment_d: (cmd) => Comment_data.filter((p_d) => p_d.id == cmd.id),
   },
 };
 

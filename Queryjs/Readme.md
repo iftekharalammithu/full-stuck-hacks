@@ -7,7 +7,7 @@ npm i apollo-server-core @apollo/server graphql
 => type Query Is The Schema of Graphql <br>
 => resolvers is for all functions activity <br>
 => ApolloServerPluginLandingPageGraphQLPlayground is for graphql dashboard <br>
-=> Mutation is for Data Update , Delete <br>
+=> Mutation is for Data Create, Update , Delete <br>
 
 # Api calls
 
@@ -44,5 +44,23 @@ query individual {
       email
     }
   }
+}
+
+## Mutation
+
+mutation create_user($userId: ID!, $createUserId: ID, $title: String, $body: String) {
+  create_user(userId: $userId, id: $createUserId, title: $title, body: $body) {
+    userId,
+    id,
+    title,
+    body
+  }
+}
+<!-- Variables -->
+{
+  "userId": "450",
+  "createUserId": "450",
+  "title": "mithu",
+  "body": "add new command"
 }
 ```
